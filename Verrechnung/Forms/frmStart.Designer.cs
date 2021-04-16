@@ -41,6 +41,7 @@ namespace Verrechnung
             // 
             // btnWarenkorb
             // 
+            this.btnWarenkorb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnWarenkorb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnWarenkorb.Location = new System.Drawing.Point(87, 94);
             this.btnWarenkorb.Name = "btnWarenkorb";
@@ -148,15 +149,14 @@ namespace Verrechnung
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnWarenkorb;
-        private System.Windows.Forms.Button btnArtikel;
-        private System.Windows.Forms.Button btnKunde;
-        private System.Windows.Forms.Button btnRechnung;
-        private System.Windows.Forms.Button btnUmsatzsteuer;
-        private System.Windows.Forms.Button btnStatistik;
         private System.Windows.Forms.Button btnAlleSchliessen;
         private System.Windows.Forms.Button btnProgrammSchliessen;
+        internal System.Windows.Forms.Button btnWarenkorb;
+        internal System.Windows.Forms.Button btnArtikel;
+        internal System.Windows.Forms.Button btnKunde;
+        internal System.Windows.Forms.Button btnRechnung;
+        internal System.Windows.Forms.Button btnUmsatzsteuer;
+        internal System.Windows.Forms.Button btnStatistik;
     }
 }
 

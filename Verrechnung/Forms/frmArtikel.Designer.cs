@@ -29,10 +29,19 @@ namespace Verrechnung.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // frmArtikel
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "frmArtikel";
             this.Text = "frmArtikel";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmArtikel_FormClosing);
+            this.Load += new System.EventHandler(this.frmArtikel_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

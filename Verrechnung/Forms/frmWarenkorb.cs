@@ -16,5 +16,21 @@ namespace Verrechnung.Forms
         {
             InitializeComponent();
         }
+
+        private void frmWarenkorb_Load(object sender, EventArgs e)
+        {
+            this.Height = frmStart.f1.displayHeight;
+            this.Width = frmStart.f1.Width * 4;
+            this.Location = new Point(frmStart.f1.Width, 0);
+            this.BackColor = frmStart.f1.btnBackColor;
+            this.ForeColor = frmStart.f1.btnForeColor;
+        }
+
+        private void frmWarenkorb_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            frmStart.f1.btnWarenkorb.BackColor = frmStart.f1.btnBackColor;
+            frmStart.f1.btnWarenkorb.ForeColor = frmStart.f1.btnForeColor;
+            frmStart.f1.frmWk = null;
+        }
     }
 }

@@ -90,8 +90,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\frmArtikel.resx">
+      <DependentUpon>frmArtikel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKunde.resx">
+      <DependentUpon>frmKunde.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmRechnung.resx">
+      <DependentUpon>frmRechnung.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmStart.resx">
       <DependentUpon>frmStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmStatistik.resx">
+      <DependentUpon>frmStatistik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmUmsatzsteuer.resx">
+      <DependentUpon>frmUmsatzsteuer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmWarenkorb.resx">
+      <DependentUpon>frmWarenkorb.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
