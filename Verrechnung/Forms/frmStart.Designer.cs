@@ -48,6 +48,7 @@ namespace Verrechnung
             this.btnWarenkorb.TabIndex = 0;
             this.btnWarenkorb.Text = "Warenkorb";
             this.btnWarenkorb.UseVisualStyleBackColor = true;
+            this.btnWarenkorb.Click += new System.EventHandler(this.btnWarenkorb_Click);
             // 
             // btnArtikel
             // 
@@ -58,6 +59,7 @@ namespace Verrechnung
             this.btnArtikel.TabIndex = 1;
             this.btnArtikel.Text = "Artikel";
             this.btnArtikel.UseVisualStyleBackColor = true;
+            this.btnArtikel.Click += new System.EventHandler(this.btnArtikel_Click);
             // 
             // btnKunde
             // 
@@ -68,6 +70,7 @@ namespace Verrechnung
             this.btnKunde.TabIndex = 2;
             this.btnKunde.Text = "Kunde";
             this.btnKunde.UseVisualStyleBackColor = true;
+            this.btnKunde.Click += new System.EventHandler(this.btnKunde_Click);
             // 
             // btnRechnung
             // 
@@ -78,6 +81,7 @@ namespace Verrechnung
             this.btnRechnung.TabIndex = 3;
             this.btnRechnung.Text = "Rechnung";
             this.btnRechnung.UseVisualStyleBackColor = true;
+            this.btnRechnung.Click += new System.EventHandler(this.btnRechnung_Click);
             // 
             // btnUmsatzsteuer
             // 
@@ -88,6 +92,7 @@ namespace Verrechnung
             this.btnUmsatzsteuer.TabIndex = 4;
             this.btnUmsatzsteuer.Text = "Umsatzsteuer";
             this.btnUmsatzsteuer.UseVisualStyleBackColor = true;
+            this.btnUmsatzsteuer.Click += new System.EventHandler(this.btnUmsatzsteuer_Click);
             // 
             // btnStatistik
             // 
@@ -98,6 +103,7 @@ namespace Verrechnung
             this.btnStatistik.TabIndex = 5;
             this.btnStatistik.Text = "Statistik";
             this.btnStatistik.UseVisualStyleBackColor = true;
+            this.btnStatistik.Click += new System.EventHandler(this.btnStatistik_Click);
             // 
             // btnAlleSchliessen
             // 
@@ -108,6 +114,7 @@ namespace Verrechnung
             this.btnAlleSchliessen.TabIndex = 6;
             this.btnAlleSchliessen.Text = "Alle Schließen";
             this.btnAlleSchliessen.UseVisualStyleBackColor = true;
+            this.btnAlleSchliessen.Click += new System.EventHandler(this.btnAlleSchliessen_Click);
             // 
             // btnProgrammSchliessen
             // 
@@ -118,6 +125,7 @@ namespace Verrechnung
             this.btnProgrammSchliessen.TabIndex = 7;
             this.btnProgrammSchliessen.Text = "Programm schließen";
             this.btnProgrammSchliessen.UseVisualStyleBackColor = true;
+            this.btnProgrammSchliessen.Click += new System.EventHandler(this.btnProgrammSchliessen_Click);
             // 
             // frmStart
             // 
