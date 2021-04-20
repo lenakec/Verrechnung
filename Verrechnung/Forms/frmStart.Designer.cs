@@ -43,75 +43,88 @@ namespace Verrechnung
             // 
             this.btnWarenkorb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnWarenkorb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWarenkorb.Location = new System.Drawing.Point(87, 94);
+            this.btnWarenkorb.Location = new System.Drawing.Point(58, 61);
+            this.btnWarenkorb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnWarenkorb.Name = "btnWarenkorb";
-            this.btnWarenkorb.Size = new System.Drawing.Size(253, 67);
+            this.btnWarenkorb.Size = new System.Drawing.Size(169, 44);
             this.btnWarenkorb.TabIndex = 0;
             this.btnWarenkorb.Text = "Warenkorb";
             this.btnWarenkorb.UseVisualStyleBackColor = true;
             this.btnWarenkorb.Click += new System.EventHandler(this.btnWarenkorb_Click);
+            this.btnWarenkorb.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_ZuClick);
             // 
             // btnArtikel
             // 
             this.btnArtikel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnArtikel.Location = new System.Drawing.Point(87, 189);
+            this.btnArtikel.Location = new System.Drawing.Point(58, 123);
+            this.btnArtikel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnArtikel.Name = "btnArtikel";
-            this.btnArtikel.Size = new System.Drawing.Size(253, 67);
+            this.btnArtikel.Size = new System.Drawing.Size(169, 44);
             this.btnArtikel.TabIndex = 1;
             this.btnArtikel.Text = "Artikel";
             this.btnArtikel.UseVisualStyleBackColor = true;
             this.btnArtikel.Click += new System.EventHandler(this.btnArtikel_Click);
+            this.btnArtikel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_ZuClick);
             // 
             // btnKunde
             // 
             this.btnKunde.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKunde.Location = new System.Drawing.Point(87, 295);
+            this.btnKunde.Location = new System.Drawing.Point(58, 192);
+            this.btnKunde.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnKunde.Name = "btnKunde";
-            this.btnKunde.Size = new System.Drawing.Size(253, 67);
+            this.btnKunde.Size = new System.Drawing.Size(169, 44);
             this.btnKunde.TabIndex = 2;
             this.btnKunde.Text = "Kunde";
             this.btnKunde.UseVisualStyleBackColor = true;
             this.btnKunde.Click += new System.EventHandler(this.btnKunde_Click);
+            this.btnKunde.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_ZuClick);
             // 
             // btnRechnung
             // 
             this.btnRechnung.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRechnung.Location = new System.Drawing.Point(87, 397);
+            this.btnRechnung.Location = new System.Drawing.Point(58, 258);
+            this.btnRechnung.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRechnung.Name = "btnRechnung";
-            this.btnRechnung.Size = new System.Drawing.Size(253, 67);
+            this.btnRechnung.Size = new System.Drawing.Size(169, 44);
             this.btnRechnung.TabIndex = 3;
             this.btnRechnung.Text = "Rechnung";
             this.btnRechnung.UseVisualStyleBackColor = true;
             this.btnRechnung.Click += new System.EventHandler(this.btnRechnung_Click);
+            this.btnRechnung.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_ZuClick);
             // 
             // btnUmsatzsteuer
             // 
             this.btnUmsatzsteuer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUmsatzsteuer.Location = new System.Drawing.Point(87, 492);
+            this.btnUmsatzsteuer.Location = new System.Drawing.Point(58, 320);
+            this.btnUmsatzsteuer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnUmsatzsteuer.Name = "btnUmsatzsteuer";
-            this.btnUmsatzsteuer.Size = new System.Drawing.Size(253, 67);
+            this.btnUmsatzsteuer.Size = new System.Drawing.Size(169, 44);
             this.btnUmsatzsteuer.TabIndex = 4;
             this.btnUmsatzsteuer.Text = "Umsatzsteuer";
             this.btnUmsatzsteuer.UseVisualStyleBackColor = true;
             this.btnUmsatzsteuer.Click += new System.EventHandler(this.btnUmsatzsteuer_Click);
+            this.btnUmsatzsteuer.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_ZuClick);
             // 
             // btnStatistik
             // 
             this.btnStatistik.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStatistik.Location = new System.Drawing.Point(87, 594);
+            this.btnStatistik.Location = new System.Drawing.Point(58, 386);
+            this.btnStatistik.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnStatistik.Name = "btnStatistik";
-            this.btnStatistik.Size = new System.Drawing.Size(253, 67);
+            this.btnStatistik.Size = new System.Drawing.Size(169, 44);
             this.btnStatistik.TabIndex = 5;
             this.btnStatistik.Text = "Statistik";
             this.btnStatistik.UseVisualStyleBackColor = true;
             this.btnStatistik.Click += new System.EventHandler(this.btnStatistik_Click);
+            this.btnStatistik.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_ZuClick);
             // 
             // btnAlleSchliessen
             // 
             this.btnAlleSchliessen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAlleSchliessen.Location = new System.Drawing.Point(87, 694);
+            this.btnAlleSchliessen.Location = new System.Drawing.Point(58, 451);
+            this.btnAlleSchliessen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAlleSchliessen.Name = "btnAlleSchliessen";
-            this.btnAlleSchliessen.Size = new System.Drawing.Size(253, 67);
+            this.btnAlleSchliessen.Size = new System.Drawing.Size(169, 44);
             this.btnAlleSchliessen.TabIndex = 6;
             this.btnAlleSchliessen.Text = "Alle Schließen";
             this.btnAlleSchliessen.UseVisualStyleBackColor = true;
@@ -120,9 +133,10 @@ namespace Verrechnung
             // btnProgrammSchliessen
             // 
             this.btnProgrammSchliessen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProgrammSchliessen.Location = new System.Drawing.Point(87, 794);
+            this.btnProgrammSchliessen.Location = new System.Drawing.Point(58, 516);
+            this.btnProgrammSchliessen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnProgrammSchliessen.Name = "btnProgrammSchliessen";
-            this.btnProgrammSchliessen.Size = new System.Drawing.Size(253, 67);
+            this.btnProgrammSchliessen.Size = new System.Drawing.Size(169, 44);
             this.btnProgrammSchliessen.TabIndex = 7;
             this.btnProgrammSchliessen.Text = "Programm schließen";
             this.btnProgrammSchliessen.UseVisualStyleBackColor = true;
@@ -130,9 +144,9 @@ namespace Verrechnung
             // 
             // frmStart
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(477, 882);
+            this.ClientSize = new System.Drawing.Size(308, 566);
             this.Controls.Add(this.btnProgrammSchliessen);
             this.Controls.Add(this.btnAlleSchliessen);
             this.Controls.Add(this.btnStatistik);
@@ -141,6 +155,7 @@ namespace Verrechnung
             this.Controls.Add(this.btnKunde);
             this.Controls.Add(this.btnArtikel);
             this.Controls.Add(this.btnWarenkorb);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmStart";
             this.Text = "Verrechnung";
             this.Load += new System.EventHandler(this.frmStart_Load);

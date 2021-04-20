@@ -44,7 +44,7 @@ namespace Verrechnung
             this.Width = displayWidth / 5;
             this.Height = displayHeight;
             this.Location = new Point(0, 0);
-            buttonHeight = (displayHeight - 40) / 8;
+            buttonHeight = (displayHeight -40) / 8;
             buttons = new Button[] { btnWarenkorb, btnArtikel, btnKunde, btnRechnung, btnUmsatzsteuer, btnStatistik, btnAlleSchliessen, btnProgrammSchliessen };
 
             int xpos = 0;
@@ -63,7 +63,46 @@ namespace Verrechnung
         }
 
         #region Methoden
+        internal void button_ZuClick(object sender, MouseEventArgs e)
+        {
+            switch(e.Button)
+            {
+                case MouseButtons.Right:
+                    Button btn = (Button)sender;
 
+                    if(btn==btnArtikel)
+                    {
+                        if (frmArt != null)
+                            frmArt.Close();
+                    }
+                    if(btn == btnKunde)
+                    {
+                        if (frmKun != null)
+                            frmKun.Close();
+                    }
+                    if (btn == btnRechnung)
+                    {
+                        if (frmRech != null)
+                            frmRech.Close();
+                    }
+                    if (btn == btnStatistik)
+                    {
+                        if (frmStat != null)
+                            frmStat.Close();
+                    }
+                    if (btn == btnUmsatzsteuer)
+                    {
+                        if (frmUst != null)
+                            frmUst.Close();
+                    }
+                    if (btn == btnWarenkorb)
+                    {
+                        if (frmWk != null)
+                            frmWk.Close();
+                    }
+                    break;
+            }
+        }
         #endregion
 
         private void btnWarenkorb_Click(object sender, EventArgs e)
@@ -74,10 +113,10 @@ namespace Verrechnung
             }
             else
             {
-                btnWarenkorb.BackgroundImage = Image.FromFile(Application.StartupPath + "\\images\\warenkorb.png");
-                btnWarenkorb.Text = "";
+                //btnWarenkorb.BackgroundImage = Image.FromFile(Application.StartupPath + "\\images\\warenkorb.png");
+                //btnWarenkorb.Text = "";
                 btnWarenkorb.BackColor = Color.White;
-                //btnWarenkorb.ForeColor = buttonColor;
+                btnWarenkorb.ForeColor = btnBackColor;
                 frmWk = new frmWarenkorb();
                 frmWk.Text = "Warenkorb";
                 frmWk.Show();
