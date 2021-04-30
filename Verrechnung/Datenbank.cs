@@ -13,7 +13,7 @@ namespace Verrechnung.Forms
     class Datenbank
     {
         // private SqlConnection verbindung;
-      //  private SqlCommand cmd;
+       //  private SqlCommand cmd;
 
         private OleDbConnection verbindung;
         private OleDbCommand cmd;
