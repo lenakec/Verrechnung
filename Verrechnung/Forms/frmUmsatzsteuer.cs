@@ -24,6 +24,18 @@ namespace Verrechnung.Forms
             this.Location = new Point(frmStart.f1.Width, 0);
             this.BackColor = frmStart.f1.btnBackColor;
             this.ForeColor = frmStart.f1.btnForeColor;
+            btnSpeichern.ForeColor = frmStart.f1.btnBackColor;
+            btnSpeichern.BackColor = frmStart.f1.btnForeColor;
+
+            //Panels ein/ausrichten
+            panel1.Width = this.Width / 5 * 3;
+            panel2.Width = this.Width / 5 * 2;
+            panel1.Height = this.Height;
+            panel2.Height = this.Height;
+            //panel1.BackColor = Color.Gray;
+            //panel2.BackColor = Color.DarkGray;
+            panel1.Location = new Point(0, 0);
+            panel2.Location = new Point(panel1.Width, 0);
         }
 
         private void frmUmsatzsteuer_FormClosing(object sender, FormClosingEventArgs e)
@@ -32,5 +44,6 @@ namespace Verrechnung.Forms
             frmStart.f1.btnUmsatzsteuer.ForeColor = frmStart.f1.btnForeColor;
             frmStart.f1.frmUst = null;
         }
+
     }
 }

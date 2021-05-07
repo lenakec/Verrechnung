@@ -55,8 +55,8 @@ namespace Verrechnung.Forms
             listView1.View = View.Details;
             listView1.Columns.Add("ArtikelID");
             listView1.Columns.Add("Bezeichnung");
-            listView1.Columns.Add("Nettopreis");
-            listView1.Columns.Add("Umsatzsteuersatz");
+            listView1.Columns.Add("Nettopreis").TextAlign = HorizontalAlignment.Right;
+            listView1.Columns.Add("Umsatzsteuersatz").TextAlign = HorizontalAlignment.Right;
             listView1.Font = new Font("Arial", 12, FontStyle.Bold);
 
             //Datenbankobjekt initialisieren
