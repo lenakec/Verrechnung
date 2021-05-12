@@ -184,7 +184,7 @@ namespace Verrechnung.Forms
             else //Bearbeiten
             {
                 //Test
-                sql = "";
+              
             }
            
         }
