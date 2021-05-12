@@ -17,6 +17,14 @@ namespace Verrechnung.Forms
             InitializeComponent();
         }
 
+        #region Variablen
+        Datenbank db;
+        ListViewItem lvItem;
+        OleDbDataReader dr;
+        //List<int> ustListe;
+        string sql;
+        #endregion
+
         private void frmUmsatzsteuer_Load(object sender, EventArgs e)
         {
             this.Height = frmStart.f1.displayHeight;
