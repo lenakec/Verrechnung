@@ -157,5 +157,36 @@ namespace Verrechnung.Forms
 
             cbNeuanlage.Checked = false; //wenn man auf Bearbeiten klicken
         }
+
+        private void btnSpeichern_Click(object sender, EventArgs e)
+        {
+            if(txtUnternehmen.Text.Equals("") || txtAnsprechperson.Text.Equals("") || txtTelefon.Text.Equals("") || txtEmail.Text.Equals("") || txtZahlungskondition.Text.Equals(""))
+            {
+                MessageBox.Show("Bitte geben Sie sowohl Unternehmen, Ansprechperson, Telefon, Email als auch Zahlungskondition ein!");
+                return;
+            }
+
+            if(cbPLZ.SelectedIndex == -1)
+            {
+                MessageBox.Show("Bitte wählen Sie PLZ und Ort aus!");
+                return;
+            }
+            if(cbNeuanlage.Checked)
+            {
+                sql = @"Insert into Kunde (Unternehmen, Ansprechperson, Telefon, Email, Strasse, Zahlungskondition, PostleitzahlID)
+                        values ('" + txtUnternehmen.Text + "' , '" + txtAnsprechperson.Text + "' , '" + txtTelefon.Text + "' , '" +
+                        txtEmail.Text + "' , '" + txtStrasse.Text + "' , '" + txtZahlungskondition.Text + "' , " +
+                        plzListe[cbPLZ.SelectedIndex] + ");";
+                MessageBox.Show(sql);
+                db.Ausfuehren(sql);
+                einlesenKunden();
+            }
+            else //Bearbeiten
+            {
+                //Test
+                sql = "";
+            }
+           
+        }
     }
 }

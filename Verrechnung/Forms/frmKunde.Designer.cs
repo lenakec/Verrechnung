@@ -83,7 +83,7 @@ namespace Verrechnung.Forms
             this.panel2.Controls.Add(this.tableLayoutPanel1);
             this.panel2.Location = new System.Drawing.Point(319, 20);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(391, 398);
+            this.panel2.Size = new System.Drawing.Size(405, 466);
             this.panel2.TabIndex = 2;
             // 
             // tableLayoutPanel1
@@ -108,12 +108,11 @@ namespace Verrechnung.Forms
             this.tableLayoutPanel1.Controls.Add(this.txtEmail, 2, 5);
             this.tableLayoutPanel1.Controls.Add(this.txtZahlungskondition, 2, 8);
             this.tableLayoutPanel1.Controls.Add(this.lbModus, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label6, 1, 7);
-            this.tableLayoutPanel1.Controls.Add(this.label7, 1, 6);
-            this.tableLayoutPanel1.Controls.Add(this.txtStrasse, 2, 7);
-            this.tableLayoutPanel1.Controls.Add(this.cbPLZ, 2, 6);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label7, 1, 7);
+            this.tableLayoutPanel1.Controls.Add(this.label6, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.cbPLZ, 2, 7);
+            this.tableLayoutPanel1.Controls.Add(this.txtStrasse, 2, 6);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 11;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
@@ -127,7 +126,7 @@ namespace Verrechnung.Forms
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(391, 398);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(391, 466);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // label1
@@ -190,7 +189,7 @@ namespace Verrechnung.Forms
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(23, 312);
+            this.label6.Location = new System.Drawing.Point(23, 272);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(61, 16);
             this.label6.TabIndex = 5;
@@ -201,7 +200,7 @@ namespace Verrechnung.Forms
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(23, 272);
+            this.label7.Location = new System.Drawing.Point(23, 312);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(63, 16);
             this.label7.TabIndex = 6;
@@ -229,6 +228,7 @@ namespace Verrechnung.Forms
             this.btnSpeichern.TabIndex = 9;
             this.btnSpeichern.Text = "Speichern";
             this.btnSpeichern.UseVisualStyleBackColor = true;
+            this.btnSpeichern.Click += new System.EventHandler(this.btnSpeichern_Click);
             // 
             // cbNeuanlage
             // 
@@ -303,7 +303,7 @@ namespace Verrechnung.Forms
             // 
             this.txtStrasse.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtStrasse.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStrasse.Location = new System.Drawing.Point(187, 306);
+            this.txtStrasse.Location = new System.Drawing.Point(187, 266);
             this.txtStrasse.Margin = new System.Windows.Forms.Padding(2);
             this.txtStrasse.Multiline = true;
             this.txtStrasse.Name = "txtStrasse";
@@ -326,7 +326,7 @@ namespace Verrechnung.Forms
             this.cbPLZ.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.cbPLZ.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbPLZ.FormattingEnabled = true;
-            this.cbPLZ.Location = new System.Drawing.Point(188, 268);
+            this.cbPLZ.Location = new System.Drawing.Point(188, 308);
             this.cbPLZ.Name = "cbPLZ";
             this.cbPLZ.Size = new System.Drawing.Size(159, 24);
             this.cbPLZ.TabIndex = 17;

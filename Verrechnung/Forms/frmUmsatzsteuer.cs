@@ -45,5 +45,9 @@ namespace Verrechnung.Forms
             frmStart.f1.frmUst = null;
         }
 
+        private void btnSpeichern_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
